@@ -1,12 +1,21 @@
 const rotateString = (str, num) => {
-  newString = "";
-
+  var newString = "";
   for (var i = 0; i < str.length; i++) {
-    newString.push(str[(i + 2) % str.length]);
-    console.log(`i: ${i} --- str.len: ${str.length}`);
+    newString = newString + str[(i + (str.length - num)) % str.length];
   }
   return newString;
 };
+
+
+
+
+
+
+
+
+
+
+
 
 const isRotation = (str1, str2) => {};
 
